@@ -1,7 +1,9 @@
 import type { Metadata } from 'next';
 
 import './globals.css';
+import { inter, notoSansSC, notoSerifSC } from './fonts';
 import { seo } from '@/lib/seo';
+import { cn } from '@/lib/utils';
 
 export const metadata: Metadata = {
   metadataBase: seo.url,
@@ -47,8 +49,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="zh-CN">
-      <body className={inter.className}>{children}</body>
+    <html
+      lang="zh-CN"
+      className={cn('h-full antialiased select-none', inter.variable, notoSansSC.variable, notoSerifSC.variable)}
+    >
+      <body>
+        {children}
+      </body>
     </html>
   );
 }
