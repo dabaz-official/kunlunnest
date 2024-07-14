@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className="mt-14 lg:mt-0">
+    <div className="mt-20 lg:mt-0">
       <Image
         src="/images/hero.jpg"
         alt="昆仑巢的照片。"

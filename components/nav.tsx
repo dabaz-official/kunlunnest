@@ -26,7 +26,7 @@ export function Navbar() {
 
   return (
     <header className="fixed top-0 z-20 w-full bg-white/90 border-b border-neutral-100 backdrop-blur-md">
-      <nav className="mx-auto flex items-center justify-between max-w-7xl py-4 px-6 lg:px-8">
+      <nav className="mx-auto flex items-center justify-between max-w-7xl p-6 lg:px-8">
         <div className="flex flex-1">
           <Link
             href="/"
@@ -101,7 +101,7 @@ export function Navbar() {
         className="lg:hidden"
       >
         <div className="fixed inset-0 z-10" />
-        <div className="fixed inset-y-0 right-0 z-30 w-full overflow-y-auto bg-white px-6 py-4 sm:max-w-sm sm:ring-1 sm:ring-neutral-900/10">
+        <div className="fixed inset-y-0 right-0 z-30 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-neutral-900/10">
           <div className="flex items-center justify-between">
             <Link href="/" className="-m-1.5 p-1.5">
               <Image
