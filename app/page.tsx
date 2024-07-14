@@ -11,8 +11,6 @@ export default function Home() {
         sizes='(100vw) 100vw, (50vw) 50vw, (33vw) 33vw, (25vw) 25vw'
         quality={75}
         priority={true}
-        placeholder='blur'
-        blurDataURL='data:image/jpeg;base64,/9j/....'
         style={{
           width: '100%',
           height: 'auto',
