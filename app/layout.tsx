@@ -6,6 +6,7 @@ import './globals.css';
 import { inter, notoSansSC, notoSerifSC } from './fonts';
 import { seo } from '@/lib/seo';
 import { cn } from '@/lib/utils';
+import { Navbar } from '@/components/nav';
 
 export const metadata: Metadata = {
   metadataBase: seo.url,
@@ -54,7 +55,9 @@ export default function RootLayout({
     <html
       lang="zh-CN"
       className={cn('h-full antialiased select-none', inter.variable, notoSansSC.variable, notoSerifSC.variable)}
+      suppressHydrationWarning
     >
+      <Navbar />
       <body>
         {children}
         <SpeedInsights />
