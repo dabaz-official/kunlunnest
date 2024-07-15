@@ -27,13 +27,13 @@ export const navItems = {
     { name: '3D 打印开放实验室', href: 'http://dayuoa.com/info/kopen-3dp', icon: HiOutlinePrinter },
     { name: '科技历史博物馆', href: 'http://vjianjie.com/e-museum', icon: HiOutlineBuildingLibrary },
   ],
-  "联系我们": [
-    { name: '招募信息', href: '#', icon: HiOutlineBriefcase },
-    { name: '场地申请', href: 'http://wzurl.cn/wj/9HDB8VeMh6', icon: HiOutlineInboxArrowDown },
-  ],
-  "连接": [
+  "巢脉": [
     { name: '资源库', href: 'http://dayuoa.com/hub/kunlunnest', icon: HiOutlineDatabase },
     { name: '知识库', href: 'http://dayuoa.com/info/kunlunnest', icon: HiOutlineBookOpen },
     { name: '申请入库', href: 'http://dayuoa.com/hub/apply/kunlunnest', icon: HiOutlineBookmark },
+  ],
+  "联系我们": [
+    { name: '招募信息', href: '#', icon: HiOutlineBriefcase },
+    { name: '场地申请', href: 'http://wzurl.cn/wj/9HDB8VeMh6', icon: HiOutlineInboxArrowDown },
   ],
 }
