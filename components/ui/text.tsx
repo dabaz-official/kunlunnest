@@ -19,11 +19,13 @@ const Text: React.FC<TextSectionProps> = ({
       <h2 className="text-xs sm:text-sm md:text-md lg:text-lg text-neutral-600 font-inter">
         {subtitle}
       </h2>
-      {paragraphs.map((paragraph, index) => (
-        <p key={index} className="mt-6 sm:mt-8 lg:mt-10 text-neutral-600 text-left text-sm sm:text-md lg:text-lg">
-          {paragraph}
-        </p>
-      ))}
+      <div className="mt-6 sm:mt-8 lg:mt-10">
+        {paragraphs.map((paragraph, index) => (
+          <p key={index} className="mt-6 text-neutral-600 text-left text-sm sm:text-md lg:text-base">
+            {paragraph}
+          </p>
+        ))}
+      </div>
     </div>
   );
 };
