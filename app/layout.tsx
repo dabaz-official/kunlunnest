@@ -6,7 +6,7 @@ import './globals.css';
 import { inter, notoSansSC, notoSerifSC } from './fonts';
 import { seo } from '@/lib/seo';
 import { cn } from '@/lib/utils';
-import { Navbar } from '@/components/nav';
+import { Navbar } from '@/components/layout/nav';
 
 export const metadata: Metadata = {
   metadataBase: seo.url,
@@ -58,7 +58,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <Navbar />
-      <body suppressHydrationWarning>
+      <body>
         {children}
         <SpeedInsights />
         <Analytics />
