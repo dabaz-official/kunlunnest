@@ -1,13 +1,19 @@
 import type { Metadata } from 'next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/react';
+import { Inter } from 'next/font/google';
 
 import './globals.css';
-import { inter, notoSansSC, notoSerifSC } from './fonts';
 import { seo } from '@/lib/seo';
 import { cn } from '@/lib/utils';
 import { Navbar } from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   metadataBase: seo.url,
@@ -55,7 +61,7 @@ export default function RootLayout({
   return (
     <html
       lang="zh-CN"
-      className={cn('h-full antialiased select-none', inter.variable, notoSansSC.variable, notoSerifSC.variable)}
+      className={cn('h-full antialiased select-none', inter.variable)}
       suppressHydrationWarning
     >
       <Navbar />
