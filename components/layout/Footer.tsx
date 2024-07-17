@@ -23,7 +23,7 @@ export default function Footer() {
             <a
               key={item.name}
               href={item.href} 
-              className="text-neutral-400 hover:text-neutral-500"
+              className="text-neutral-400 hover:text-neutral-500 transition"
               target='_blank'
             >
               <span className="sr-only">{item.name}</span>
@@ -36,7 +36,7 @@ export default function Footer() {
             <div key={item.name} className="pb-6">
               <Link
                 href={item.href} 
-                className="text-sm leading-6 text-neutral-600 hover:text-neutral-900"
+                className="text-sm leading-6 text-neutral-600 hover:text-neutral-900 transition"
               >
                 {item.name}
               </Link>

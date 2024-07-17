@@ -27,7 +27,7 @@ export function ProductsSection() {
             <div key={productIdx}>
               <Link
                 href={product.href}
-                className="text-lg font-semibold leading-6 text-blue-500 hover:underline hover:text-blue-600 transition"
+                className="text-lg font-semibold leading-6 text-blue-600 hover:underline transition"
               >
                 {product.name}
               </Link>
