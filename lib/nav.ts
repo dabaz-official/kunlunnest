@@ -1,6 +1,6 @@
 export const headerNavItems = [
   {
-    name: '关于',
+    name: '关于昆仑巢',
     href: '/about',
   },
   {
@@ -21,19 +21,14 @@ export const headerNavItems = [
   },
 ]
 
-export const footerNavItems = {
-  main: [
-    ...headerNavItems,
-    {
-      name: '联系我们',
-      href: '/contact',
-    },
-    {
-      name: '加入我们',
-      href: '/jobs',
-    },
-  ],
-  social: [
-
-  ]
-}
+export const footerNavItems = [
+  ...headerNavItems,
+  {
+    name: '联系我们',
+    href: '/contact',
+  },
+  {
+    name: '加入我们',
+    href: '/jobs',
+  },
+]
