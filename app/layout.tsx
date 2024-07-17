@@ -6,7 +6,8 @@ import './globals.css';
 import { inter, notoSansSC, notoSerifSC } from './fonts';
 import { seo } from '@/lib/seo';
 import { cn } from '@/lib/utils';
-import { Navbar } from '@/components/layout/nav';
+import { Navbar } from '@/components/layout/Navbar';
+import Footer from '@/components/layout/Footer';
 
 export const metadata: Metadata = {
   metadataBase: seo.url,
@@ -63,6 +64,7 @@ export default function RootLayout({
         <SpeedInsights />
         <Analytics />
       </body>
+      <Footer />
     </html>
   );
 }
