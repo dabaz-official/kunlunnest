@@ -12,16 +12,16 @@ const Text: React.FC<TextSectionProps> = ({
   const paragraphs = Array.isArray(text) ? text : text.split('\n\n');
 
   return (
-    <div className="py-10 lg:py-16 max-w-2xl text-center mx-auto">
-      <h1 className="text-xl font-bold tracking-tight text-neutral-900 sm:text-2xl lg:text-3xl xl:text-4xl">
+    <div className="text-base leading-7 text-neutral-700 lg:max-w-lg">
+      <p className="text-base leading-7 text-blue-600">
+        {subtitle}
+      </p>
+      <h1 className="mt-2 text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl">
         {title}
       </h1>
-      <h2 className="text-xs sm:text-sm md:text-md lg:text-lg text-neutral-600 font-light">
-        {subtitle}
-      </h2>
-      <div className="mt-6 sm:mt-8 lg:mt-10">
+      <div className="max-w-xl">
         {paragraphs.map((paragraph, index) => (
-          <p key={index} className="mt-6 text-neutral-600 text-left text-sm sm:text-md lg:text-base font-light">
+          <p key={index} className="mt-8 text-neutral-900">
             {paragraph}
           </p>
         ))}

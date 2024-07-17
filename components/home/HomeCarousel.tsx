@@ -2,13 +2,24 @@
 
 import React from 'react';
 import Image from 'next/image';
+import { EmblaOptionsType } from 'embla-carousel'
+import { DotButton, useDotButton } from './HomeCarouselDotButton'
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 
 import { images } from '@/lib/images';
 
-export function HomeCarousel() {
-  const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()])
+type PropType = {
+  slides: number[]
+  options?: EmblaOptionsType
+}
+
+const HomeCarousel: React.FC<PropType> = (props) => {
+  const { slides, options } = props
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()])
+
+  const { selectedIndex, scrollSnaps, onDotButtonClick } =
+    useDotButton(emblaApi)
 
   return (
     <div className="overflow-hidden" ref={emblaRef}>
@@ -32,9 +43,22 @@ export function HomeCarousel() {
                 objectFit: 'cover',
               }}
             />
+            <div className="flex flex-wrap justify-end items-center -mr-3">
+              {scrollSnaps.map((_, index) => (
+                <DotButton
+                  key={index}
+                  onClick={() => onDotButtonClick(index)}
+                  className={'bg-transparent touch-manipulation cursor-pointer border-0 p-0 m-0 w-10 h-10 flex items-center justify-center rounded-full'.concat(
+                    index === selectedIndex ? 'shadow-lg shadow-neutral-900/50' : ''
+                  )}
+                />
+              ))}
+            </div>
           </div>
         ))}
       </div>
     </div>
   )
 }
+
+export { HomeCarousel }
