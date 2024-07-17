@@ -43,19 +43,19 @@ const HomeCarousel: React.FC<PropType> = (props) => {
                 objectFit: 'cover',
               }}
             />
-            <div className="flex flex-wrap justify-end items-center -mr-3">
-              {scrollSnaps.map((_, index) => (
-                <DotButton
-                  key={index}
-                  onClick={() => onDotButtonClick(index)}
-                  className={'bg-transparent touch-manipulation cursor-pointer border-0 p-0 m-0 w-10 h-10 flex items-center justify-center rounded-full'.concat(
-                    index === selectedIndex ? 'shadow-lg shadow-neutral-900/50' : ''
-                  )}
-                />
-              ))}
-            </div>
           </div>
         ))}
+        <div className="flex flex-wrap justify-end items-center -mr-3">
+          {scrollSnaps.map((_, index) => (
+            <DotButton
+              key={index}
+              onClick={() => onDotButtonClick(index)}
+              className={'bg-transparent touch-manipulation cursor-pointer border-0 p-0 m-0 w-10 h-10 flex items-center justify-center rounded-full'.concat(
+                index === selectedIndex ? 'shadow-lg shadow-neutral-900/50' : ''
+              )}
+            />
+          ))}
+        </div>
       </div>
     </div>
   )
