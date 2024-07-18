@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import Text from '@/components/ui/text';
+import Text from '@/components/ui/Text';
 
 export function AboutSection() {
   return (
