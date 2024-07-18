@@ -38,7 +38,7 @@ export function Navbar() {
               width={850}
               height={266}
               priority={true}
-              className="h-8 w-auto"
+              className="h-10 w-auto"
             />
           </Link>
         </div>
@@ -56,7 +56,7 @@ export function Navbar() {
             <Link
               key={item.name}
               href={item.href}
-              className="text-sm font-semibold leading-6 text-neutral-600 hover:text-neutral-900 transition"
+              className="text-md font-semibold leading-6 text-neutral-600 hover:text-neutral-900 transition"
             >
               {item.name}
             </Link>
@@ -65,7 +65,7 @@ export function Navbar() {
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link
             href="mailto:info@kunlunnest.cn"
-            className="text-sm font-semibold leading-6 text-neutral-600 hover:text-neutral-900 transition">
+            className="text-md font-semibold leading-6 text-neutral-600 hover:text-neutral-900 transition">
               联系
             </Link>
         </div>
