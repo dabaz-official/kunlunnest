@@ -22,7 +22,7 @@ export function AboutSection() {
             <div className="mt-10 flex">
               <Link
                 href="/about"
-                className="text-base leading-7 text-blue-600"
+                className="text-base leading-7 text-blue-600 hover:underline hover:text-blue-500 transition"
               >
                 深入了解昆仑巢 <span aria-hidden="true">-&gt;</span>
               </Link>
