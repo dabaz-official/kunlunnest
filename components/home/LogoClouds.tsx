@@ -4,7 +4,7 @@ import Image from 'next/image';
 export function LogoClouds() {
   return (
     <div className="bg-white py-16 sm:py-24">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center">
+      <div className="mx-auto max-w-7xl text-center">
         <h1 className="mt-2 text-3xl font-bold text-neutral-900 sm:text-4xl tracking-tight">
           创新生态合作伙伴
         </h1>
