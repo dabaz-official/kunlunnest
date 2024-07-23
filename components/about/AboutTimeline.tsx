@@ -9,22 +9,22 @@ const timeline = [
   {
     name: '昆仑巢开幕',
     description:
-      'Provident quia ut esse. Vero vel eos repudiandae aspernatur. Cumque minima impedit sapiente a architecto nihil.',
+      '“昆仑巢” 于 11 月 18 日正式开幕，是科技也是极客精神汇聚的盛宴。',
     date: '2023 年 11 月',
     dateTime: '2021-12',
   },
   {
-    name: 'Released beta',
+    name: '更多',
     description:
       'Sunt perspiciatis incidunt. Non necessitatibus aliquid. Consequatur ut officiis earum eum quia facilis. Hic deleniti dolorem quia et.',
-    date: 'Feb 2022',
+    date: '2024',
     dateTime: '2022-02',
   },
   {
-    name: 'Global launch of product',
+    name: '更多',
     description:
       'Ut ipsa sint distinctio quod itaque nam qui. Possimus aut unde id architecto voluptatem hic aut pariatur velit.',
-    date: 'Dec 2022',
+    date: '2025',
     dateTime: '2022-12',
   },
 ]
@@ -49,7 +49,7 @@ export default function AboutTimeline() {
               />
             </time>
             <p className="mt-6 text-lg font-semibold leading-8 tracking-tight text-neutral-900">{item.name}</p>
-            <p className="mt-1 text-sm leading-7 text-neutral-600">{item.description}</p>
+            <p className="mt-1 text-md leading-7 text-neutral-600">{item.description}</p>
           </div>
         ))}
       </div>
