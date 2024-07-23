@@ -16,14 +16,14 @@ const timeline = [
   {
     name: '更多',
     description:
-      'Sunt perspiciatis incidunt. Non necessitatibus aliquid. Consequatur ut officiis earum eum quia facilis. Hic deleniti dolorem quia et.',
+      '样例',
     date: '2024',
     dateTime: '2022-02',
   },
   {
     name: '更多',
     description:
-      'Ut ipsa sint distinctio quod itaque nam qui. Possimus aut unde id architecto voluptatem hic aut pariatur velit.',
+      '样例',
     date: '2025',
     dateTime: '2022-12',
   },
