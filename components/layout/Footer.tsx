@@ -36,14 +36,14 @@ export default function Footer() {
             <div key={item.name} className="pb-6">
               <Link
                 href={item.href} 
-                className="text-sm leading-6 text-neutral-600 hover:text-neutral-900 transition"
+                className="text-md leading-6 text-neutral-600 hover:text-neutral-900 transition"
               >
                 {item.name}
               </Link>
             </div>
           ))}
         </nav>
-        <p className="mt-10 text-center text-xs leading-5 text-neutral-600">
+        <p className="mt-10 text-center text-sm leading-5 text-neutral-600">
           &copy; {year} 北京智能之路科技有限公司. All rights reserved.
         </p>
       </div>
