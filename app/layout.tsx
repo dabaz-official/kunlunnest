@@ -1,19 +1,13 @@
 import type { Metadata } from 'next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/react';
-import { Inter } from 'next/font/google';
 
 import './globals.css';
 import { seo } from '@/lib/seo';
 import { cn } from '@/lib/utils';
 import { Navbar } from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
-
-const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
-  display: 'swap',
-});
+import { inter } from '@/app/fonts/fonts';
 
 export const metadata: Metadata = {
   metadataBase: seo.url,
