@@ -13,20 +13,6 @@ const timeline = [
     date: '2023 年 11 月',
     dateTime: '2021-12',
   },
-  {
-    name: '更多',
-    description:
-      '样例',
-    date: '2024',
-    dateTime: '2022-02',
-  },
-  {
-    name: '更多',
-    description:
-      '样例',
-    date: '2025',
-    dateTime: '2022-12',
-  },
 ]
 
 export default function AboutTimeline() {
