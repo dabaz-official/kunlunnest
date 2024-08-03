@@ -20,17 +20,22 @@ const products = [
 
 export function ProductsSection() {
   return (
-    <div className="bg-white py-8 sm:py-16">
+    <div className="bg-white py-16 sm:py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <dl className="mt-10 grid grid-cols-2 gap-8 pt-10 sm:grid-cols-3">
+        <dl className="mt-10 mx-auto grid grid-cols-1 gap-8 pt-10 lg:grid-cols-3 max-w-2xl lg:max-w-none">
           {products.map((product, productIdx) => (
             <div key={productIdx}>
-              <Link
-                href={product.href}
-                className="text-lg font-semibold leading-6 text-blue-600 hover:underline hover:text-blue-500 transition"
-              >
-                {product.name}
-              </Link>
+              <div className="flex justify-between items-center text-lg">
+                <p className='font-semibold'>
+                  {product.name}
+                </p>
+                <Link
+                  href={product.href}
+                  className="leading-6 text-blue-600 hover:underline hover:text-blue-500 transition"
+                >
+                  了解更多 -&gt;
+                </Link>
+              </div>
               <p
                 className="mt-2 text-base leading-7 tracking-tight text-neutral-900"
               >
