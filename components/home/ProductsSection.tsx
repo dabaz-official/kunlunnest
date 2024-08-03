@@ -33,7 +33,7 @@ export function ProductsSection() {
                   href={product.href}
                   className="leading-6 text-blue-600 hover:underline hover:text-blue-500 transition"
                 >
-                  了解更多 -&gt;
+                  深入了解 -&gt;
                 </Link>
               </div>
               <p

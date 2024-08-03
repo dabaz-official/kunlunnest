@@ -13,7 +13,7 @@ export default function LabsNavigation() {
           <div className="group aspect-h-1 aspect-w-2 overflow-hidden rounded-lg sm:aspect-h-1 sm:aspect-w-1 sm:row-span-2">
             <img
               src="/images/labs/3d.webp"
-              alt="Two models wearing women's black cotton crewneck tee and off-white cotton crewneck tee."
+              alt="昆仑巢的 3D 打印开放实验室"
               className="object-cover object-center group-hover:opacity-75 transition-all"
             />
             <div aria-hidden="true" className="bg-gradient-to-b from-transparent to-black opacity-50" />
@@ -34,7 +34,7 @@ export default function LabsNavigation() {
           <div className="group aspect-h-1 aspect-w-2 overflow-hidden rounded-lg sm:aspect-none sm:relative sm:h-full">
             <img
               src="/images/labs/aigc.webp"
-              alt="Wooden shelf with gray and olive drab green baseball caps, next to wooden clothes hanger with sweaters."
+              alt="昆仑巢的 AIGC 开放实验室。"
               className="object-cover object-center group-hover:opacity-75 sm:absolute sm:inset-0 sm:h-full sm:w-full transition-all"
             />
             <div
@@ -58,7 +58,7 @@ export default function LabsNavigation() {
           <div className="group aspect-h-1 aspect-w-2 overflow-hidden rounded-lg sm:aspect-none sm:relative sm:h-full">
             <img
               src="/images/labs/robot.webp"
-              alt="Walnut desk organizer set with white modular trays, next to porcelain mug on wooden desk."
+              alt="昆仑巢的人形机器人开放实验室。"
               className="object-cover object-center group-hover:opacity-75 sm:absolute sm:inset-0 sm:h-full sm:w-full transition-all"
             />
             <div
