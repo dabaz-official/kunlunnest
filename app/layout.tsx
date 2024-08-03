@@ -59,7 +59,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <Navbar />
-      <body>
+      <body className="h-full">
         {children}
         <SpeedInsights />
         <Analytics />

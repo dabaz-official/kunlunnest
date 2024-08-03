@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: '昆仑巢，如同一片火花四溅的舞台，将不同领域的智慧和创意汇聚一堂。',  
 }
 
-export default function News() {
+export default function Labs() {
   return (
     <main className="isolate">
       <LabsNavigation />
