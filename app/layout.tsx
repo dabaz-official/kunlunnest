@@ -55,7 +55,7 @@ export default function RootLayout({
   return (
     <html
       lang="zh-CN"
-      className={cn('h-full antialiased select-none', inter.variable)}
+      className={cn('antialiased select-none', inter.variable)}
       suppressHydrationWarning
     >
       <Navbar />
